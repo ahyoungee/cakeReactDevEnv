@@ -1,0 +1,6 @@
+[submodule "cakeReactApi"]
+	path = cakeReactApi
+	url = https://github.com/ahyoungee/cakeReactApi.git
+[submodule "cakeReactFront"]
+	path = cakeReactFront
+	url = https://github.com/ahyoungee/cakeReactFront.git
