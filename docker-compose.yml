@@ -4,7 +4,7 @@ services:
     build:
       context: ./docker/php
     volumes:
-      - ./cakeStudyApp/cms:/app/cms:cached
+      - ./cakeReactApi/:/app/cakeReactApi:cached
     container_name: php
   nginx:
     build:
@@ -15,7 +15,7 @@ services:
     ports:
       - 8080:80
     volumes:
-      - ./cakeStudyApp/cms:/app/cms:cached
+      - ./cakeReactApi:/app/cakeReactApi:cached
       - ./docker/nginx/etc/nginx/conf.d/:/etc/nginx/conf.d/
   db:
     build:
@@ -37,7 +37,7 @@ services:
       container_name: node
       tty: true
       volumes:
-        - ./cakeStudyApp/front:/app/front:cached
+        - ./cakeReactFront:/app/cakeReactFront:cached
       ports:
         - "3000:3000"
      
