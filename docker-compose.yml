@@ -37,7 +37,7 @@ services:
       container_name: node
       tty: true
       volumes:
-        - ./cakeReactFront:/app/cake-react-front:cached
+        - ./cakeReactFront:/app/cakeReactFront:cached
       ports:
         - "3000:3000"
      

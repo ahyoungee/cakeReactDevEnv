@@ -5,4 +5,4 @@ RUN apt-get update \
     && apt-get clean \
     && yarn global add create-react-app;
 
-WORKDIR /app/front/cake-react-front
+WORKDIR /app/cakeReactFront
